@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MegaToolsApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".SensRotation"
+            android:exported="false" />
+        <activity
+            android:name=".SensAcceletro"
+            android:exported="false" />
+        <activity
+            android:name=".SensHum"
+            android:exported="false" />
+        <activity
+            android:name=".SensPressure"
+            android:exported="false" />
+        <activity
+            android:name=".SensTemp"
+            android:exported="false" />
+        <activity
+            android:name=".SensLight"
+            android:exported="false" />
+        <activity
+            android:name=".SensMagneto"
+            android:exported="false" />
+        <activity
+            android:name=".SensOrient"
+            android:exported="false" />
+        <activity
+            android:name=".SensProx"
+            android:exported="false" />
+        <activity
+            android:name=".SensGravity"
+            android:exported="false" />
+        <activity
+            android:name=".SnesRot"
+            android:exported="false" />
+        <activity
+            android:name=".SensGyro"
+            android:exported="false" />
+        <activity
+            android:name=".SensorAccelerate"
+            android:exported="false" />
+        <activity
+            android:name=".SensorTest"
+            android:exported="false" />
+        <activity
+            android:name=".Video"
+            android:exported="false" />
+
+        <receiver
+            android:name=".BatteryBroadcast"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".SimInfo"
+            android:exported="false" />
+        <activity
+            android:name=".LoveMatch"
+            android:exported="false" />
+        <activity
+            android:name=".SensorsList"
+            android:exported="false" />
+        <activity
+            android:name=".FingerprintHandler"
+            android:exported="false" />
+        <activity
+            android:name=".DeviceInfo"
+            android:exported="false" />
+
+        <receiver
+            android:name=".ACTION_AIRPLANE_MODE_CHANGED"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Vibration"
+            android:exported="false" />
+        <activity
+            android:name=".Touch"
+            android:exported="false" />
+        <activity
+            android:name=".Flash"
+            android:exported="false" />
+        <activity
+            android:name=".Wifi"
+            android:exported="false" />
+        <activity
+            android:name=".Sound"
+            android:exported="false" />
+        <activity
+            android:name=".Security"
+            android:exported="false" />
+        <activity
+            android:name=".Rotation"
+            android:exported="false" />
+        <activity
+            android:name=".Location"
+            android:exported="false" />
+        <activity
+            android:name=".Internet"
+            android:exported="false" />
+        <activity
+            android:name=".Camera"
+            android:exported="false" />
+        <activity
+            android:name=".Brightness"
+            android:exported="false" />
+        <activity
+            android:name=".Bluetooth"
+            android:exported="false" />
+        <activity
+            android:name=".Battery"
+            android:exported="false" />
+        <activity
+            android:name=".Airplane"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

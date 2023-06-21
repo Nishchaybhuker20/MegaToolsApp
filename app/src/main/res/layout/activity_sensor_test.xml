@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SensorTest">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.test.scrollviews.MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Test All Sensors"
+            android:textSize="25dp"
+            android:layout_marginTop="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <!-- TODO: Update blank fragment layout -->
+
+
+            <LinearLayout
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".SensorTest">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp" />
+
+                <!--            1st row image Accelerometer, Gyroscope, Rotation vector sensor-->
+
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:id="@+id/sensAccTextIcon"
+                        android:layout_width="127dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="getAccelMeth"
+                        android:padding="15dp"
+                        app:srcCompat="@drawable/senacce"
+
+                        />
+
+                    <ImageView
+                        android:padding="15dp"
+                        android:id="@+id/sensGyrTextIcon"
+                        android:layout_width="126dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="getGyroMeth"
+                        app:srcCompat="@drawable/sengyr" />
+
+                    <ImageView
+                        android:padding="15dp"
+                        android:id="@+id/sensRotTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="getRotationMeth"
+                        app:srcCompat="@drawable/senrota" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:id="@+id/sensAccText"
+                        android:layout_width="101dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Accelerometer"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <TextView
+                        android:id="@+id/sensGyrText"
+                        android:layout_width="102dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Gyroscope"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <TextView
+                        android:id="@+id/sensRotText"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Rotation Vector"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                </LinearLayout>
+
+                <!--            2nd row text Gravity, Proximity, Orientation-->
+
+                <LinearLayout
+                    android:layout_width="410dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:padding="15dp"
+                        android:id="@+id/sensGraTextIcon"
+                        android:layout_width="127dp"
+                        android:onClick="getGravityMeth"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/sengravity" />
+
+                    <ImageView
+                        android:padding="15dp"
+                        android:id="@+id/sensProTextIcon"
+                        android:layout_width="126dp"
+                        android:onClick="getProxMeth"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/sensorproximity" />
+
+                    <ImageView
+                        android:padding="15dp"
+                        android:id="@+id/sensOriTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="getOrientMeth"
+                        app:srcCompat="@drawable/senrient" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:id="@+id/sensGraText"
+                        android:layout_width="101dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Gravity "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <TextView
+                        android:id="@+id/sensProText"
+                        android:layout_width="102dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Proximity"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <TextView
+                        android:id="@+id/sensOriText"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Orientation"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                </LinearLayout>
+
+                <!--            3rd row text Magnetometer, Light, Ambient temperature-->
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:padding="10dp"
+                        android:id="@+id/sensMagTextIcon"
+                        android:layout_width="127dp"
+                        android:onClick="getMegnoMeth"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/senmeg" />
+
+                    <ImageView
+                        android:padding="10dp"
+                        android:id="@+id/sensLigTextIcon"
+                        android:layout_width="126dp"
+                        android:onClick="getLightMeth"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/senlight" />
+
+                    <ImageView
+                        android:padding="10dp"
+                        android:id="@+id/sensAmbTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="getAmbientMeth"
+                        app:srcCompat="@drawable/sentemp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:id="@+id/sensMagText"
+                        android:layout_width="101dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Magnetometer"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <TextView
+                        android:id="@+id/sensLigText"
+                        android:layout_width="102dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Light"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <TextView
+                        android:id="@+id/sensAmbText"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" Ambient Temp."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                </LinearLayout>
+
+
+                <!--            4th row text Magnetometer, Light, Ambient temperature-->
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="100dp"
+
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:padding="10dp"
+                        android:id="@+id/sensPreTextIcon"
+                        android:layout_width="127dp"
+                        android:onClick="getPressureMeth"
+
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/senpressure" />
+
+                    <ImageView
+                        android:id="@+id/sensHumTextIcon"
+                        android:layout_width="126dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="getHumMeth"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/senhumi" />
+
+                    <ImageView
+                        android:padding="10dp"
+                        android:id="@+id/sensExtTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/security" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:id="@+id/sensPreText"
+                        android:layout_width="101dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Pressure"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <TextView
+                        android:id="@+id/sensHumText"
+                        android:layout_width="102dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Humidity"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <TextView
+                        android:id="@+id/sensExtText"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Extra"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

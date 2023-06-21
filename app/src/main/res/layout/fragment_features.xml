@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeaturesFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.test.scrollviews.MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Explore and Diagnose Your Phone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <!-- TODO: Update blank fragment layout -->
+
+
+            <LinearLayout
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".MainActivity2">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp" />
+
+                <!--            1st row image airplane, battery, bluetooth-->
+
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:id="@+id/airplaneTextIcon"
+                        android:layout_width="127dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/aeroplane" />
+
+                    <ImageView
+                        android:id="@+id/batteryTextIcon"
+                        android:layout_width="126dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/battery" />
+
+                    <ImageView
+                        android:id="@+id/bluetoothTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/bluetooth" />
+
+                </LinearLayout>
+
+                <!--            1st row text airplane, battery, bluetooth-->
+
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:id="@+id/airplaneText"
+                        android:layout_width="101dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Airplane"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+                    <TextView
+                        android:id="@+id/batteryText"
+                        android:layout_width="102dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Battery"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+                    <TextView
+                        android:id="@+id/bluetoothText"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Bluetooth"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp" />
+
+                <!--            2nd row image brightness, flash, gps-->
+
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:id="@+id/brightnessTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/brightness" />
+
+                    <ImageView
+                        android:id="@+id/flashTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/flash" />
+
+                    <ImageView
+                        android:id="@+id/gpsTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/gps" />
+                </LinearLayout>
+
+                <!--            2nd row text brightness, flash, gps-->
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:id="@+id/brightnessText"
+                        android:layout_width="39dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Brightness"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+                    <TextView
+                        android:id="@+id/flashText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Flash"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+                    <TextView
+                        android:id="@+id/gpsText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="GPS"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp" />
+
+                <!--            3rd row image internet, security, sound-->
+
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:id="@+id/internetTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/internet" />
+
+                    <ImageView
+                        android:id="@+id/securityTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/security" />
+
+                    <ImageView
+                        android:id="@+id/soundTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/sound" />
+                </LinearLayout>
+
+                <!--            3rd row text internet, security, sound-->
+
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:id="@+id/internetText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Internet"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+                    <TextView
+                        android:id="@+id/securityText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Security"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+                    <TextView
+                        android:id="@+id/soundText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Sound"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <!--            4th row image touch, vibration, wifi-->
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:id="@+id/touchTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/touchid" />
+
+                    <ImageView
+                        android:id="@+id/vibrationTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/vibration" />
+
+                    <ImageView
+                        android:id="@+id/wifiTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/wifi" />
+                </LinearLayout>
+
+
+                <!--            4th row text touch, vibration, wifi-->
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:id="@+id/touchText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Touch"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+                    <TextView
+                        android:id="@+id/vibrationText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Vibration"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+                    <TextView
+                        android:id="@+id/wifiText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Wifi"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <!--             5th row image devide, sim, network-->
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:id="@+id/phoneInfoTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/phoneinfo" />
+
+                    <ImageView
+                        android:id="@+id/simInfoTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/siminfo" />
+
+                    <ImageView
+                        android:id="@+id/sensorTestTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/netowrkinfo" />
+                </LinearLayout>
+
+                <!--             5th row text devide, sim, network-->
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:id="@+id/phoneInfoText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Phone Info"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+                    <TextView
+                        android:id="@+id/simInfoText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Sim Info"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+                    <TextView
+                        android:id="@+id/sensorTestText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Sensor Test"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+                </LinearLayout>
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <!--             6th row image scanner, bp, love-->
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:id="@+id/sensorsListTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/bodyscanner" />
+
+                    <ImageView
+                        android:id="@+id/cameraTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/camera" />
+
+                    <ImageView
+                        android:id="@+id/videoTextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/video" />
+                </LinearLayout>
+
+                <!--             6th row text scanner, bp, love-->
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:id="@+id/sensorsListText"
+                        android:layout_width="31dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Sensors List"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <TextView
+                        android:id="@+id/cameraText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Camera"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+                    <TextView
+                        android:id="@+id/videoText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Video"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>
